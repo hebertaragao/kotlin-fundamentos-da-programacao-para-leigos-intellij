@@ -23,147 +23,127 @@
         android:id="@+id/editPrimeiroNumero"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="76dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="6dp"
         android:ems="10"
         android:hint="Digite o 1º Número"
         android:inputType="number"
         android:minHeight="48dp"
-        app:layout_constraintBottom_toBottomOf="@+id/txtPrimieroNumero"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/txtPrimieroNumero"
-        app:layout_constraintTop_toBottomOf="@+id/txtTitulo"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintBottom_toTopOf="@+id/editSegundoNumero"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/txtPrimieroNumero"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="31dp"
         android:text="1º Número"
         android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtTitulo" />
+        app:layout_constraintBottom_toTopOf="@+id/txtSegundoNumero"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/txtSegundoNumero"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="26dp"
         android:text="2º Número"
         android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtPrimieroNumero" />
+        app:layout_constraintBottom_toTopOf="@+id/btnSomar"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/editSegundoNumero"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="149dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="149dp"
         android:ems="10"
         android:hint="Digite o 2º Número"
         android:inputType="number"
         android:minHeight="48dp"
-        app:layout_constraintBottom_toBottomOf="@+id/txtSegundoNumero"
+        app:layout_constraintBottom_toBottomOf="@+id/txtSomatoria"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.861"
-        app:layout_constraintStart_toEndOf="@+id/txtSegundoNumero"
-        app:layout_constraintTop_toBottomOf="@+id/editPrimeiroNumero"
-        app:layout_constraintVertical_bias="0.23" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btnLimpar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="6dp"
         android:text="Limpar"
-        app:layout_constraintBottom_toTopOf="@+id/txtSomaCalculada"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editSegundoNumero"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/editSegundoNumero" />
 
     <Button
         android:id="@+id/btnSomar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="223dp"
         android:text="Somar"
-        app:layout_constraintBottom_toTopOf="@+id/txtSoma"
-        app:layout_constraintEnd_toStartOf="@+id/btnLimpar"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtSegundoNumero"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/txtSomaCalculada"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="192dp"
-        android:layout_marginBottom="404dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="42dp"
         android:hint="9999"
         android:textColor="#E91E63"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toStartOf="@+id/btnLimpar"
+        app:layout_constraintTop_toBottomOf="@+id/btnLimpar" />
 
     <TextView
         android:id="@+id/txtSoma"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="408dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="15dp"
         android:text="Soma"
         android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="@+id/btnSomar"
+        app:layout_constraintTop_toBottomOf="@+id/btnSomar" />
 
     <TextView
         android:id="@+id/txtSomatoria"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:text="Somatória"
         android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtSoma"
-        app:layout_constraintVertical_bias="0.024" />
+        app:layout_constraintStart_toStartOf="@+id/txtSoma"
+        app:layout_constraintTop_toBottomOf="@+id/txtSoma" />
 
     <TextView
         android:id="@+id/txtSomatoriaCalculada"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="192dp"
+        android:layout_marginTop="6dp"
         android:hint="9999"
         android:textColor="#673AB7"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/txtSomatoria"
-        app:layout_constraintTop_toBottomOf="@+id/txtSomaCalculada"
-        app:layout_constraintVertical_bias="0.021" />
+        app:layout_constraintStart_toStartOf="@+id/txtSomaCalculada"
+        app:layout_constraintTop_toBottomOf="@+id/txtSomaCalculada" />
 
     <Button
         android:id="@+id/btnSair"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="288dp"
+        android:layout_marginBottom="68dp"
         android:onClick="eventoSair"
         android:text="Sair"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
